@@ -46,5 +46,5 @@ While different sampling methods were used, eventually the best models are those
 ## Limitations
 
 * Due to confidentiality, it is unknown whether the data is real or generated, and if the observations are real, where the data come from
-* Deciding a threshold for key metrics, such as precision or recall, depends on actual operational constraints that each hospital may have
+* Deciding a threshold for key metrics, such as precision or recall, depends on actual operational constraints that each hospital may have, so the choice of F2 score in this scenario is only for reference
 * Since precision is low at around 0.2, secondary models may be an option in further filtering of patients who were initially diagnosed with a stroke for better filtering
