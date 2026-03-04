@@ -43,8 +43,10 @@ While different sampling methods were used, eventually the best models are those
 | LightGBM | 'avg_glucose_level', 'age', 'bmi', 'age_ever_married', 'urban', 'hypertension', 'male', 'work_type_self_employed', 'smoke', 'smoking_status_never_smoked' | 0.4909 | 0.7105 | 0.2195 |
 | VotingClassifier | 'bmi', 'age', 'avg_glucose_level', 'age_ever_married', 'age_heart_disease', 'smoking_status_smokes', 'age_hypertension', 'work_type_private', 'ever_married', 'smoking_status_never_smoked', 'smoking_status_unknown', 'risk_count' | 0.5085 | 0.7895 | 0.2098 |
 
+With the best model, it means that for approximately 1000 patients with 50 stroke cases, 39 are correctly flagged, while approximately 188 alerts are generated.
+
 ## Limitations
 
 * Due to confidentiality, it is unknown whether the data is real or generated, and if the observations are real, where the data come from
-* Deciding a threshold for key metrics, such as precision or recall, depends on actual operational constraints that each hospital may have, so the choice of F2 score in this scenario is only for reference
+* Deciding a threshold for key metrics, such as precision or recall, depends on actual operational constraints that each hospital may have, so the choice of F2 score in this scenario is only for reference, and may not be the actual metric used in real life scenarios
 * Since precision is low at around 0.2, secondary models may be an option in further filtering of patients who were initially diagnosed with a stroke for better filtering
